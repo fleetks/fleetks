@@ -1,0 +1,38 @@
+{
+  "name": "@fleetks/game",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier -w './src/**/*.{ts,tsx}'",
+    "codegen": "graphql-codegen"
+  },
+  "dependencies": {
+    "@graphql-tools/schema": "^10.0.6",
+    "@graphql-tools/utils": "^10.5.4",
+    "@picocss/pico": "^2.0.6",
+    "@prisma/client": "^5.19.1",
+    "graphql": "^16.9.0",
+    "graphql-yoga": "^5.7.0",
+    "ioredis": "^5.4.1",
+    "next": "14.2.8",
+    "react": "^18",
+    "react-dom": "^18",
+    "urql": "^4.1.0"
+  },
+  "devDependencies": {
+    "@eddeee888/gcg-typescript-resolver-files": "^0.10.4",
+    "@graphql-codegen/cli": "^5.0.2",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.8",
+    "prettier": "^3.3.3",
+    "prisma": "^5.19.1",
+    "typescript": "^5"
+  }
+}

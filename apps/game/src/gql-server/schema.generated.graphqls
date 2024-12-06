@@ -1,0 +1,36 @@
+directive @auth(requires: Role!) on FIELD_DEFINITION
+
+directive @uppercase on FIELD_DEFINITION
+
+type Comment {
+  content: String!
+  id: ID!
+}
+
+input LoginInput {
+  email: String!
+}
+
+type Mutation {
+  login(loginInput: LoginInput!): Boolean!
+  logout: Boolean!
+}
+
+type Post {
+  comments: [Comment!]!
+  content: String!
+  id: ID!
+  title: String!
+}
+
+type Query {
+  hello: String!
+  me: String!
+  posts: [Post!]!
+}
+
+enum Role {
+  ADMIN
+  MEMBER
+  USER
+}
